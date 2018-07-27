@@ -1,0 +1,38 @@
+@media screen and (max-width: 720px) {
+	.mainpage {
+		height: 100%;
+		width: 100%;
+	}
+	.container {
+		width: 100%;
+		margin: 10px;
+	}
+	.fret {
+		background-image: url(../single_fret.png);
+		background-size: contain;
+	}
+	.description {
+		flex-basis: 100%;
+		padding: 10px;
+	}
+	.description p {
+		text-align: center;
+	}
+	.options {
+		flex-basis: 100%;
+		display: flex;
+		align-items: center;
+		margin: 5px;
+		flex-direction: column;
+	}
+	.yourscore {
+		margin-left: 10px;
+	}
+	img {
+		width: 80%;
+	}
+	label {
+		width: 15%;
+		text-align: left;
+	}
+}

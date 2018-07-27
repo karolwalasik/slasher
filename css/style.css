@@ -1,0 +1,207 @@
+body {
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-family: 'Kanit', sans-serif;
+	text-align: center;
+	background: linear-gradient(#000000, #575757);
+}
+
+.mainpage {
+	display: flex;
+	height: 100%;
+	width: 600px;
+	margin: 0 auto;
+	align-items: center;
+	flex-wrap: nowrap;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.container {
+	background: url(../37643228_2257143487646961_3263628666206158848_n.png);
+	background-size: cover;
+	height: 300px;
+	width: 600px;
+	display: flex;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.fret {
+	flex-basis: 25%;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.string {
+	width: 100%;
+	height: 7px;
+	border: none;
+	-webkit-appearance: none;
+	background-image: url(../struna1.png);
+	background-size: contain;
+	cursor: pointer;
+	z-index: 1;
+	position: relative;
+}
+
+.string::after {
+	content: "";
+	position: absolute;
+	top: 7px;
+	height: 12px;
+	width: 100%;
+	background-color: transparent;
+	left: 0px;
+}
+
+.string::before {
+	content: "";
+	position: absolute;
+	top: -7px;
+	height: 12px;
+	width: 100%;
+	background-color: transparent;
+	left: 0px;
+}
+
+.mainpage #videobutton {
+	width: 120px;
+	height: 40px;
+	-webkit-appearance: none;
+	background-color: #ce1133;
+	text-align: center;
+	color: white;
+	font-family: 'Kanit', sans-serif;
+	border: none;
+	border-radius: 3px;
+	text-transform: uppercase;
+	margin: 10px auto;
+	font-size: 16px;
+}
+
+#videobutton:hover {
+	background-color: white;
+	color: black;
+}
+
+.myStyle {
+	-webkit-box-shadow: 0px 0px 35px 5px rgba(115, 255, 0, 1);
+}
+
+.myStyle2 {
+	-webkit-box-shadow: 0px 0px 35px 5px rgb(255, 0, 0);
+}
+
+img {
+	width: 100%;
+	margin-top: 10px;
+}
+
+.yourscore {
+	text-align: left;
+	width: 100%;
+	text-transform: uppercase;
+}
+
+.yourscore p {
+	margin-bottom: 0px;
+}
+
+h2 {
+	text-transform: uppercase;
+}
+
+.desccontainer {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.description {
+	flex-basis: 70%;
+}
+
+.description p {
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.options {
+	flex-basis: 30%;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.container2 {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	cursor: pointer;
+}
+
+
+/* Hide the browser's default radio button */
+
+.container2 input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	background-color: #ce1133;
+	border-radius: 5px
+}
+
+.container2:hover input~.checkmark {
+	border: 1px solid white;
+}
+
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.checkmark:before {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.container2 input:checked~.checkmark:after {
+	display: block;
+}
+
+.container2 input:checked~.checkmark:before {
+	display: block;
+}
+
+.container2 .checkmark:after {
+	top: 9px;
+	left: 0px;
+	width: 20px;
+	height: 4px;
+	background: white;
+	transform: rotate(45deg);
+	border-radius: 2px;
+}
+
+.container2 .checkmark:before {
+	top: 9px;
+	left: 0px;
+	width: 20px;
+	height: 4px;
+	border-radius: 2px;
+	background: white;
+	transform: rotate(135deg);
+}
